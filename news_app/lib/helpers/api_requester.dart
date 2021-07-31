@@ -2,10 +2,11 @@ import 'package:dio/dio.dart';
 import 'package:news_app/helpers/news_exceptions.dart';
 
 class ApiRequester {
-  static String url = "https://newsapi.org/v2/";
+  static String url = "https://newsapphack2.herokuapp.com/api/v1/";
 
   Future<Dio> initDio() async {
     return Dio(BaseOptions(
+      headers: {'Accept-Language': 'kg'},
       baseUrl: url,
       responseType: ResponseType.json,
       receiveTimeout: 10000,

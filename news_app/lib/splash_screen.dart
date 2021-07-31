@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:news_app/news_screen.dart';
+import 'package:news_app/screens/news/news_screen.dart';
+
 
 class SplashScreen extends StatefulWidget {
   @override
